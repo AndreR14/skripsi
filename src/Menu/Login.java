@@ -130,9 +130,9 @@ public class Login extends javax.swing.JFrame {
         jLabel9.setBounds(390, 240, 120, 17);
 
         jLabel8.setFont(new java.awt.Font("Tw Cen MT", 1, 24)); // NOI18N
-        jLabel8.setText("LOGIN");
+        jLabel8.setText("KONTOL");
         jPanel2.add(jLabel8);
-        jLabel8.setBounds(420, 30, 68, 27);
+        jLabel8.setBounds(420, 30, 100, 27);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
