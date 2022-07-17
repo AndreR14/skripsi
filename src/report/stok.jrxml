@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="dafbef69-bbae-4016-914c-24868824cd73">
+	<property name="ireport.zoom" value="1.2100000000000009"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[SELECT a.kodestok, c.nama_barang, d.jenisatuan, a.jumlahbarang FROM stok a
+LEFT JOIN barang c ON a.kodebarang = c.id
+LEFT JOIN satuan d ON a.kodesatuan = d.kodesatuan]]>
+	</queryString>
+	<field name="kodestok" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="kodestok"/>
+		<property name="com.jaspersoft.studio.field.label" value="kodestok"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="stok"/>
+	</field>
+	<field name="nama_barang" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nama_barang"/>
+		<property name="com.jaspersoft.studio.field.label" value="nama_barang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="barang"/>
+	</field>
+	<field name="jenisatuan" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="jenisatuan"/>
+		<property name="com.jaspersoft.studio.field.label" value="jenisatuan"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="satuan"/>
+	</field>
+	<field name="jumlahbarang" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="jumlahbarang"/>
+		<property name="com.jaspersoft.studio.field.label" value="jumlahbarang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="stok"/>
+	</field>
+	<variable name="jumlah" class="java.lang.Integer" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{jumlahbarang}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="43" uuid="9bf2d008-ace1-44fd-bee0-88d2e06da493"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN STOK BARANG
+CV ADHI RAHAYU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="43" width="220" height="39" uuid="7042e186-c9d7-4f94-a773-a797c787a9b9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Jl. Masjid Hudal Islam No 58 RT01/07 Kecamatan Pondok Gede Kelurahan Jatimakmur Kota Bekasi]]></text>
+			</staticText>
+			<image>
+				<reportElement x="32" y="12" width="114" height="70" uuid="58acebb7-5dcc-4d48-82e0-a5515c5da5d5"/>
+				<imageExpression><![CDATA[new javax.swing.ImageIcon(getClass().getResource("/report/Untitled-1.png")).getImage()]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="90" height="20" backcolor="#CCCCCC" uuid="16422dca-39d6-4c5a-aa73-c35c3811a89e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="90" y="0" width="146" height="20" backcolor="#CCCCCC" uuid="e1348c1e-d152-4839-825d-fc8695526ad4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="237" y="0" width="171" height="20" backcolor="#CCCCCC" uuid="3ae2abcf-fb8e-4186-907d-71400ca198d1">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="395" y="0" width="159" height="20" backcolor="#CCCCCC" uuid="166d02be-fdc6-4d82-8df5-89af35886f78"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="89" height="20" uuid="dca752e0-c327-488e-91bf-6b5393c6a926">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="504cde9b-a58a-4893-8fac-8f3777c7096c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Kode Stok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="0" width="147" height="20" uuid="fb5c2898-8421-4ee3-82db-c8d1c8da9ed6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1e45dec4-0f48-48a4-80c2-f352dfb5b688"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nama Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="0" width="156" height="20" uuid="6901010f-96aa-4d75-890a-d1c002298c13">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f6862608-cb24-43d0-9ca1-c3c83b297e05"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Jenis Satuan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="0" width="158" height="20" uuid="a66b5c4c-767c-437c-bb41-fdbf06ec5281">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3064cba0-a88f-474b-8b4d-b5e4c093ceda"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Jumlah Barang]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="90" height="20" uuid="f54e5c94-ef0e-40b1-bbf0-0a9656b57710"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="90" y="0" width="147" height="20" uuid="af704048-6f37-4488-9c4a-59276e6d52ac"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="237" y="0" width="158" height="20" uuid="43658dea-19f7-489f-a60e-52be60f2e5af"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="395" y="0" width="159" height="20" uuid="eabd4490-f4c3-4f49-8a4f-ce814d8f14cd"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="90" height="20" uuid="ddb9b8cb-aefa-4137-a8e9-680ae437551f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="504cde9b-a58a-4893-8fac-8f3777c7096c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kodestok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="147" height="20" uuid="46b55b0c-89cd-4cac-8914-3a62417fbb90">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1e45dec4-0f48-48a4-80c2-f352dfb5b688"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nama_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="0" width="158" height="20" uuid="66e04ad4-1c65-44be-b12e-4e34b90f6db8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f6862608-cb24-43d0-9ca1-c3c83b297e05"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{jenisatuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="0" width="158" height="20" uuid="2a3761de-3a69-4c49-aa8f-e576c0d5a31e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3064cba0-a88f-474b-8b4d-b5e4c093ceda"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{jumlahbarang}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="120" splitType="Stretch">
+			<staticText>
+				<reportElement x="353" y="40" width="200" height="20" uuid="1f11c070-cc14-4460-b99f-d624948393b7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Head Operational]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="353" y="80" width="200" height="20" uuid="4f1f9563-686c-48a7-8907-d8521f825f18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Ami]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="353" y="20" width="200" height="20" uuid="24fe7bcd-886c-4be3-8b84-c242bd020365"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Jakarta, " + new SimpleDateFormat("EEEE, dd MMMM yyyy", new java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="353" y="100" width="200" height="20" uuid="ebbfba3f-9797-4da3-a88a-0c8620e10176"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NIK : 3201066501010001]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy h.mm a">
+				<reportElement x="79" y="100" width="100" height="20" uuid="9aafc910-4ea2-4f39-b05e-bd5ce606c6ba"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="100" width="117" height="20" uuid="967e36b6-17b3-4591-9ab6-71283889b55a"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Di Cetak Pada :]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="56" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<rectangle>
+				<reportElement x="236" y="0" width="159" height="20" backcolor="#CCCCCC" uuid="ada8e066-487f-430d-8dbe-6b80f431978d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="395" y="0" width="158" height="20" backcolor="#CCCCCC" uuid="2d613b0c-f27d-4884-b2d1-134fca48d028"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="237" y="0" width="156" height="20" uuid="e581041f-a7b7-4ce6-a016-dad9b9968522"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[GRAND TOTAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="395" y="0" width="158" height="20" uuid="edf18614-088f-4565-a4b2-a42df41cc2c1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{jumlah}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

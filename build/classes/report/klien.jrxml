@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1bf28988-02dd-4b59-a225-a852b872670b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="167"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="report"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[SELECT
+     customer.`Id` AS customer_Id,
+     customer.`Nama` AS customer_Nama,
+     customer.`Jenis_kelamin` AS customer_Jenis_kelamin,
+     customer.`Nomor_telp` AS customer_Nomor_telp,
+     customer.`Alamat` AS customer_Alamat
+FROM
+     `customer` customer]]>
+	</queryString>
+	<field name="customer_Id" class="java.lang.String"/>
+	<field name="customer_Nama" class="java.lang.String"/>
+	<field name="customer_Jenis_kelamin" class="java.lang.String"/>
+	<field name="customer_Nomor_telp" class="java.lang.String"/>
+	<field name="customer_Alamat" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="39" uuid="2f7dfa6b-69aa-4837-ba6c-10fd117cd512"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[CV ADHI RAHAYU]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="587" y="39" width="196" height="20" uuid="42dee17b-6feb-46a1-89d7-d115ef623c43"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE, dd MMMM yyyy", new java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="275" y="40" width="250" height="39" uuid="641a457c-ccb8-4e05-acfa-a62450969237"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Jl. Masjid Hudal Islam No 58 RT01/07 Kecamatan Pondok Gede Kelurahan Jatimakmur Kota Bekasi]]></text>
+			</staticText>
+			<image>
+				<reportElement x="70" y="-3" width="150" height="82" uuid="98ef66b1-9da9-49b3-a1bc-fce545043226"/>
+				<imageExpression><![CDATA[new javax.swing.ImageIcon(getClass().getResource("/report/Untitled-1.png")).getImage()]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="35" backcolor="#CCCCCC" uuid="aa027ebd-6013-42f0-9445-3457ab08c1f3"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="338" y="0" width="153" height="35" uuid="bbe83d72-e6e6-4aba-9b77-2c2faca80477"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bahnschrift" size="24"/>
+				</textElement>
+				<text><![CDATA[DATA KLIEN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="105" y="1" width="159" height="20" backcolor="#CCCCCC" uuid="aabf689c-e94d-4b34-b90c-00c55814cb5e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="1" width="105" height="20" backcolor="#CCCCCC" uuid="db54f0da-4aa1-4153-b16d-5bdbf6ae828b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="264" y="1" width="201" height="20" backcolor="#CCCCCC" uuid="d496dbf5-294e-459b-a513-d3a0daca4c19"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="627" y="1" width="175" height="20" backcolor="#CCCCCC" uuid="346ff972-ce23-4309-8732-9fe7ab101010"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="465" y="1" width="162" height="20" backcolor="#CCCCCC" uuid="b10ca7ce-325c-4615-9b90-7825b5feaa25"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="1" width="105" height="20" uuid="5bd2f380-cb23-4f28-83c5-f3733897816a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="264" y="1" width="201" height="20" uuid="2dd3e6ef-d315-4199-bfa5-1e5e227b86c5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[JENIS KELAMIN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="1" width="162" height="20" uuid="27164366-2edd-484e-9d71-4aa2caf83ef7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NOMOR TLP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="627" y="1" width="155" height="20" uuid="2c076299-79a7-4ee2-9079-e33115244111"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="105" y="1" width="159" height="20" uuid="a2e01f9b-ee60-4e15-819b-6753e3f92e65"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<rectangle>
+				<reportElement x="105" y="0" width="159" height="20" uuid="e625a394-085f-4c8a-b920-2f202f617f6d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="105" height="20" uuid="1130a476-02f8-4690-85f6-b4798f3e2b2d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="264" y="0" width="201" height="20" uuid="d5a513db-ec40-4d8f-86ce-810c931e1cdf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="627" y="0" width="175" height="20" uuid="741c6e6c-19dc-42d4-b198-ced9a2b5cffc"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="465" y="0" width="162" height="20" uuid="729157b9-cb8b-41aa-b81c-dbe759739510"/>
+			</rectangle>
+			<textField>
+				<reportElement x="10" y="0" width="95" height="20" uuid="5aa4f1a7-4aad-4db1-8ae2-4f4f388dc846"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{customer_Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="115" y="0" width="149" height="20" uuid="d4ee1897-a6e7-4427-bd55-476bade67622"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{customer_Nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="0" width="184" height="20" uuid="06957309-7b06-445d-936e-e506bd0a19bd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{customer_Jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="475" y="0" width="152" height="20" uuid="e065cd14-5951-4def-80dc-a986afa91bbd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{customer_Nomor_telp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="645" y="0" width="156" height="20" uuid="e353f04f-c68a-4464-956e-778f7e9f8253"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{customer_Alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="25" width="117" height="20" uuid="db8ae6b0-54bd-423f-b5a3-00863e43276b"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Di Cetak Pada :]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy h.mm a">
+				<reportElement x="89" y="25" width="100" height="20" uuid="c0234614-58fd-402f-8b3d-42569acf907c"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="21" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="89" splitType="Stretch"/>
+	</summary>
+</jasperReport>

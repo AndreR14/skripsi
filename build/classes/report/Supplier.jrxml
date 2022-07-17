@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="54a68033-20ab-4841-b5a5-c9d4d1b57035">
+	<property name="ireport.zoom" value="1.3310000000000006"/>
+	<property name="ireport.x" value="34"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="report"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[SELECT * FROM supplier]]>
+	</queryString>
+	<field name="Kode_supplier" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Kode_supplier"/>
+		<property name="com.jaspersoft.studio.field.label" value="Kode_supplier"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<field name="Nama_supplier" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Nama_supplier"/>
+		<property name="com.jaspersoft.studio.field.label" value="Nama_supplier"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<field name="Alamat" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Alamat"/>
+		<property name="com.jaspersoft.studio.field.label" value="Alamat"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<field name="Nomor_telp" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Nomor_telp"/>
+		<property name="com.jaspersoft.studio.field.label" value="Nomor_telp"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<field name="norek" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="norek"/>
+		<property name="com.jaspersoft.studio.field.label" value="norek"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<field name="Bank" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Bank"/>
+		<property name="com.jaspersoft.studio.field.label" value="Bank"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<field name="Email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Email"/>
+		<property name="com.jaspersoft.studio.field.label" value="Email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<field name="Tanggal" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="Tanggal"/>
+		<property name="com.jaspersoft.studio.field.label" value="Tanggal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="supplier"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="77" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="0" width="553" height="39" uuid="6af8bff6-bec2-4536-ba17-15f813517810"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[LAPORAN SUPPLIER
+CV ADHI RAHAYU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="38" width="250" height="39" uuid="c1f99e1c-9217-4609-a8b4-f0966e907dd6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Jl. Masjid Hudal Islam No 58 RT01/07 Kecamatan Pondok Gede Kelurahan Jatimakmur Kota Bekasi]]></text>
+			</staticText>
+			<image>
+				<reportElement x="14" y="0" width="150" height="77" uuid="bf7aa3cc-d047-4d5e-9ac6-6dc523372260"/>
+				<imageExpression><![CDATA[new javax.swing.ImageIcon(getClass().getResource("/report/Untitled-1.png")).getImage()]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="69" height="20" backcolor="#CCCCCC" uuid="ff5bb1db-1d59-4d32-aefa-9f0fe2b25961"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="69" y="0" width="69" height="20" backcolor="#CCCCCC" uuid="e82809dc-af07-4228-80ce-aff56bc5ee6c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="138" y="0" width="69" height="20" backcolor="#CCCCCC" uuid="473d2f84-5e72-42e6-b7f8-af9ae4b752c4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="207" y="0" width="69" height="20" backcolor="#CCCCCC" uuid="3422edac-a441-4bb4-9683-98fea71a8610"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="276" y="0" width="69" height="20" backcolor="#CCCCCC" uuid="1ce35991-cd07-44a0-a563-e77548deda39"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="345" y="0" width="69" height="20" backcolor="#CCCCCC" uuid="f7fdd650-2ed0-4c39-b325-33dd61dd1567"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="414" y="0" width="138" height="20" backcolor="#CCCCCC" uuid="5b0188cc-8a1a-4abb-9295-d4a5c2b373ad"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="69" height="20" uuid="01b5fdd2-85a5-4579-8fcc-a633b9df9944"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[NOMOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="0" width="69" height="20" uuid="2fed631d-a23e-4bb9-9da1-5ddeb77c718c"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="69" height="20" uuid="d100b6d6-09c9-402d-b34b-2f5f99df10c1"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="0" width="69" height="20" uuid="5007141d-8b00-4396-bb27-34af1d6132e9"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[TELEPON]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="69" height="20" uuid="f73673ef-f926-4dfa-a3be-bd50084bca0e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[NOREK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="345" y="0" width="69" height="20" uuid="bc25be34-0456-48de-a921-224f5fc7d7c2"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[BANK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="138" height="20" uuid="cc226ec8-0cef-42a1-aca1-700511ffee3b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[EMAIL]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="69" height="20" uuid="cf996fe5-089d-4ea7-9f04-0e29ff63661f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToBandHeight" x="69" y="0" width="69" height="20" uuid="021a76f1-ee39-4233-a83e-d79cc8637513"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToBandHeight" x="138" y="0" width="69" height="20" uuid="f92e82be-33ba-4bf9-8238-fedabfdb8783"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToBandHeight" x="207" y="0" width="69" height="20" uuid="910faab2-af0d-4f8c-9d2d-eb5051609174"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToBandHeight" x="276" y="0" width="69" height="20" uuid="f1a4108a-5758-4b3b-a4cd-703cfaaf2460"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToBandHeight" x="345" y="0" width="69" height="20" uuid="16027160-5c36-4d38-bc23-1b6f609158d8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement stretchType="RelativeToBandHeight" x="414" y="0" width="138" height="20" uuid="73073189-dc8c-4e9d-a384-f3628d27f7ab"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="69" height="20" uuid="90cc9e28-3bab-49c1-8ee0-8dc345a24238">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="809f2109-5893-4e8b-9dad-e86fe82bfda3"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Kode_supplier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="0" width="68" height="20" uuid="7857a7f9-df6a-4297-a8d8-e99a05f978dd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="70efb31e-ab1b-4901-8451-583b932e2719"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Nama_supplier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="69" height="20" uuid="b6462d17-a13c-4eb8-9d9d-9fe31c6b9ca9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="841022d7-dba9-4610-9790-0a7fa522b957"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="0" width="68" height="20" uuid="75a52d8a-0b65-4ca9-92e5-beae2cee012e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dc39a4c2-f491-4cc2-a69a-1fb81e054d6e"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Nomor_telp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="68" height="20" uuid="aa7024d2-444a-4391-8d80-703f7b1c1033">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ab9e8a2b-ce2c-407a-a246-77ad5aa9288a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{norek}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="0" width="68" height="20" uuid="928bbf64-3390-4e52-a224-b41c7d04d798">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="843ad561-24a4-435a-92f2-5f6d05a564f2"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Bank}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="138" height="20" uuid="4ce3fdad-f55b-4a96-8b7f-d3a381c5d062">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0824a3de-09b5-4d18-a916-42d6ef26b490"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="120" splitType="Stretch">
+			<staticText>
+				<reportElement x="352" y="40" width="200" height="20" uuid="d11a3d8b-1ddc-4567-b9cd-cf6ee7c43f43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Head Operational]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="352" y="80" width="200" height="20" uuid="20d0c1e7-b35e-468c-b6f4-40a3246cf042"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Ami]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="352" y="20" width="200" height="20" uuid="f0610b0d-b18c-479a-afc7-725ea839a9a7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Jakarta, " + new SimpleDateFormat("EEEE, dd MMMM yyyy", new java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="352" y="100" width="200" height="20" uuid="719b3b8f-5337-47e3-ab29-7a4cdd78cc7c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NIK : 3201066501010001]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy h.mm a">
+				<reportElement x="79" y="100" width="100" height="20" uuid="135a4233-9464-4308-9680-b4c759de70ff"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="100" width="117" height="20" uuid="8eeacd4f-2bf1-4a66-b712-45f891fd3174"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Di Cetak Pada :]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
